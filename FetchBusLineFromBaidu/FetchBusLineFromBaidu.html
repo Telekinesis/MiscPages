@@ -39,7 +39,7 @@ body, html,#allmap {width: 100%;height: 100%;margin:0;}
             var stations = extractStations(busLine);
             var pathPoints = extractPath(busLine);
             var description = {"stations" : stations, "pathPoints" : pathPoints};
-            document.getElementById("b-object").innerText = JSON.stringify(description);
+            document.getElementById("b-object").innerHTML = JSON.stringify(description);
 
             function extractStations(busLine){
                 var stationCount = busLine.getNumBusStations();
